@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>訂單</title>
+  </head>
+  <body>
+    <%= order.orderId %> <%= order.amount %> <%= order.package[0].id %>
+    <form action="/createOrder/<%=order.orderId %>" method="post">
+      <button type="submit">送出</button>
+    </form>
+  </body>
+</html>
